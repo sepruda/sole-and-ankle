@@ -61,9 +61,6 @@ const ShoeCard = ({
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
-  flex: 1 1 250px;
-  width: 33%;
-  max-width: 340px;
 `;
 
 const Wrapper = styled.article``;
@@ -77,15 +74,16 @@ const Flag = styled.div`
     props.variant === "on-sale" ? COLORS.primary : COLORS.secondary};
   align-items: center;
   border-radius: 2px;
-  color: white;
+  color: ${COLORS.white};
   display: flex;
-  font-size: 14px;
+  font-size: 14 / 18 rem;
   height: 32px;
   justify-content: center;
-  padding: 9px 11px;
+  padding: 0 10px;
   position: absolute;
   right: -4px;
   top: 12px;
+  font-weight: ${WEIGHTS.bold};
 `;
 
 const Image = styled.img`
